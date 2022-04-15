@@ -39,10 +39,49 @@ function signOut() {
   document.getElementById("NameInput").value = "";
 }
 
+function copyemojicheese() {
+
+  var copyText = document.getElementById("cheeseemoji");
+
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+}
+function copyemojiorangecheese() {
+
+  var copyText = document.getElementById("ocheeseemoji");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+
+}
 
 
 
+function copyemojihappycheese() {
 
+  var copyText = document.getElementById("happycheeseemoji");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+
+}
+function copyemojisadcheese() {
+
+  var copyText = document.getElementById("sadcheeseemoji");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+
+}
 
 
 
