@@ -1,0 +1,45 @@
+body{
+  background-color: #37393E;
+  color: #ECDC68;
+  font-family: 'Arial';
+}
+
+label{
+  width: 5%;
+  display: inline-block;
+  text-align: right;
+}
+
+input{
+  background: #e5e5e5;
+  color: #303030;
+  font-size: 120%;
+  border: none;
+}
+
+.Message{
+  color: #ECDC68;
+}
+
+#Main{
+  background-color: #37393E;
+  border-radius: 1%;
+  padding-left: 1%;
+}
+#ComposedMessage {
+  background-color: #27393F;
+  color: #ECDC68;
+}
+#Title{
+  font-size: 300%;
+}
+
+#NameInput {
+  background-color: #27393F;
+  color: #ECDC68;
+}
+
+#IDInput {
+  background-color: #27393F;
+  color: #ECDC68;
+}

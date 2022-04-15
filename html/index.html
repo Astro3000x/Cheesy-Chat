@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Cheesy Chat</title>
+    <meta name = "charset" charset = "utf8">
+    <meta name = "viewport" content = "width=devicewidth">
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script src = "script.js"></script>
+    <script src= "socket.io/socket.io.js"></script>
+  </head>
+  <body onload = "onload()">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <meta name="google-signin-client_id" content="977912930938-q4t61nlfu1dn1a98l3h83upeuap41uak.apps.googleusercontent.com">
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    
+<br><button><a href="#" onclick="signOut();">Sign out</a></button></p>
+    <p id="gprofimg"><img id="profileimg"></p>
+    <p><b id="profilename"></b></p>
+    <p><b id="devm"></b></p>
+    <div id = "Main">
+      
+      <h1 id = "Title">Cheesy</h1>
+      <div id = "AccessPort">
+        <label id = "NameLabel"></label>
+        <input id = "NameInput" type = "text">
+        <br><br>
+        <label id = "IDLabel">Server ID Here:</label>
+        <input id = "IDInput" value = "Room1" type = "text">
+        <input id = "ConnectButton" class = "Button" type = "submit" value = "Connect" onclick = "Connect()">
+      </div>
+      <h2 id = "RoomID"> Server : None </h2>
+      <div id="Chat">
+        <p id = "Message0" class = "Message" style="color: #ECDC68;">🧀</p>
+        <p id = "Message1" class = "Message" style="color: #ECDC68;">🧀</p>
+        <p id = "Message2" class = "Message" style="color: #ECDC68;">🧀</p>
+        <p id = "Message3" class = "Message" style="color: #ECDC68;">🧀</p>
+        <p id = "Message4" class = "Message" style="color: #ECDC68;">🧀</p>
+        <p id = "Message5" class = "Message" style="color: #ECDC68;">🧀</p>
+        <p id = "Message6" class = "Message" style="color: #ECDC68;">🧀</p>
+        <p id = "Message7" class = "Message" style="color: #ECDC68;">🧀</p>
+        <p id = "Message8" class = "Message" style="color: #ECDC68;">🧀</p>
+        <p id = "Message9" class = "Message" style="color: #ECDC68;">🧀</p>
+        <label id = "MessageLabel"></label>
+        <input id = "ComposedMessage" type = "text">
+        <input id = "SendMessage" onclick="Send()" value = "Send" class = "Button" type = "submit">
+      </div>
+      <br><br>
+    </div>
+  </body>
+</html>
