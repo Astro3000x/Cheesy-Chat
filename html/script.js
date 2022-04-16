@@ -83,7 +83,18 @@ function copyemojisadcheese() {
 
 }
 
-
+function insertcheeseemoji() {
+  document.getElementById("ComposedMessage").value += "<img src='cheese.png' height='30' width='50'>";
+}
+function insertocheeseemoji() {
+  document.getElementById("ComposedMessage").value += "<img src='orangecheese.png' height='30' width='50'>";
+}
+function inserthappycheeseemoji() {
+  document.getElementById("ComposedMessage").value += "<img src='happycheese.png' height='30' width='50'>";
+}
+function insertsadcheeseemoji() {
+  document.getElementById("ComposedMessage").value += "<img src='sadcheese.png' height='30' width='50'>";
+}
 
 
 
@@ -140,4 +151,16 @@ function Send(){
 
 function delayReset(){
   delay = true;
+}
+function nuke() {
+  document.getElementById("Message0").innerHTML = "🧀";
+  document.getElementById("Message1").innerHTML = "🧀";
+  document.getElementById("Message2").innerHTML = "🧀";
+  document.getElementById("Message3").innerHTML = "🧀";
+  document.getElementById("Message4").innerHTML = "🧀";
+  document.getElementById("Message5").innerHTML = "🧀";
+  document.getElementById("Message6").innerHTML = "🧀";
+  document.getElementById("Message7").innerHTML = "🧀";
+  document.getElementById("Message8").innerHTML = "🧀";
+  document.getElementById("Message9").innerHTML = "🧀";
 }
