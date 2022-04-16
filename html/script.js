@@ -66,7 +66,7 @@ function copyemojihappycheese() {
 
   var copyText = document.getElementById("happycheeseemoji");
 
-  copyText.select();
+  copyText.select(); //nice
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
 
@@ -96,7 +96,12 @@ function insertsadcheeseemoji() {
   document.getElementById("ComposedMessage").value += "<img src='sadcheese.png' height='30' width='50'>";
 }
 
-
+function inserttearcheeseemoji() {
+  document.getElementById("ComposedMessage").value += "<img src='tearcheese.png' height='30' width='50'>";
+}
+function insertwearycheeseemoji() {
+  document.getElementById("ComposedMessage").value += "<img src='wearycheese.png' height='30' width='50'>";
+}
 
 var socket;
 var usernameInput
@@ -142,6 +147,8 @@ function Connect(){
 
 function Send(){
   if (delay && messageInput.value.replace(/\s/g, "") != ""){
+    
+    
     delay = false;
     setTimeout(delayReset, 1000);
     socket.emit("send", messageInput.value);
