@@ -21,15 +21,17 @@
     <p><b id="devm"></b></p>
     <div id = "Main">
       
-      <h1 id = "Title">Cheesy</h1>
+      <h1 id = "Title">Cheesy</h1><br>
+      
       <div id = "AccessPort">
-        <label id = "NameLabel"></label>
+        <label id = "NameLabel">UserName</label>
         <input id = "NameInput" type = "text">
         <br><br>
         <label id = "IDLabel">Server ID Here:</label>
         <input id = "IDInput" value = "Room1" type = "text">
         <input id = "ConnectButton" class = "Button" type = "submit" value = "Connect" onclick = "Connect()">
-      </div>
+      </div><br>
+      <button><a href="javascript:newserver();">Open New Server</a></button><br>
       <h2 id = "RoomID"> Server: None </h2>
       <div id="Chat">
         <p id = "Message0" class = "Message" style="color: #ECDC68;">🧀</p>
@@ -49,13 +51,15 @@
         <div id="emojibox">
           <p>
             <b>Emojis:</b><br>
-            <a href="javascript:insertcheeseemoji()" class="emojibtn"><img src="cheese.png" height="30" width="50"></a> <a href="javascript:insertocheeseemoji()" class="emojibtn"><img src="orangecheese.png" height="30" width="50"></a> <a href="javascript:inserttearcheeseemoji()" class="emojibtn"><img src="tearcheese.png" height="30" width="50"></a><br><a href="javascript:inserthappycheeseemoji()" class="emojibtn"><img src="happycheese.png" height="30" width="50"></a> <a href="javascript:insertsadcheeseemoji()" class="emojibtn"><img src="sadcheese.png" height="30" width="50"></a> <a href="javascript:insertwearycheeseemoji()" class="emojibtn"><img src="wearycheese.png" height="30" width="50"></a>
-          </p>
-          </p>
+            <a href="javascript:insertcheeseemoji()" class="emojibtn"><img src="cheese.png" height="30" width="50"></a> <a href="javascript:insertocheeseemoji()" class="emojibtn"><img src="orangecheese.png" height="30" width="50"></a> <a href="javascript:inserttearcheeseemoji()" class="emojibtn"><img src="tearcheese.png" height="30" width="50"></a><br><a href="javascript:inserthappycheeseemoji()" class="emojibtn"><img src="happycheese.png" height="30" width="50"></a> <a href="javascript:insertsadcheeseemoji()" class="emojibtn"><img src="sadcheese.png" height="30" width="50"></a> <a href="javascript:insertwearycheeseemoji()" class="emojibtn"><img src="wearycheese.png" height="30" width="50"></a><br><a href="javascript:insertjoycheeseemoji()" class="emojibtn"><img src="joycheese.png" height="30" width="50"></a>
+          
         </div>
       </div>
       <br><br>
       <a href="emojis.html" style="color: #ECDC68;" target="_blank">Emoji Cheat Sheet</a>
+    </div>
+    <div id="extraservers">
+      <p id="extraServers"></p>
     </div>
   </body>
 </html>

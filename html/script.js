@@ -1,7 +1,7 @@
 var devs = ["Astro 3000", "chickenman thegod"];
 var shareholder = ["Boy Bearcat"];
-
-
+var epicgamerz = ["jack sparrow", "Billy Bob"];
+let server_amount = "1"
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   console.log('ID: ' + profile.getId());
@@ -20,6 +20,9 @@ function onSignIn(googleUser) {
   }
   if (shareholder.includes(profile.getName())) {
     document.getElementById("devm").innerHTML = "Share Holder Guy";
+  }
+  if (epicgamerz.includes(profile.getName())) {
+    document.getElementById("devm").innerHTML = "Epik Gamer";
   }
   
   
@@ -102,6 +105,24 @@ function inserttearcheeseemoji() {
 function insertwearycheeseemoji() {
   document.getElementById("ComposedMessage").value += "<img src='wearycheese.png' height='30' width='50'>";
 }
+function insertjoycheeseemoji() {
+  document.getElementById("ComposedMessage").value += "<img src='joycheese.png' height='30' width='50'>";
+}
+
+
+
+function newserver() {
+  if (server_amount == "1") {
+    document.getElementById("extraServers").innerHTML = "<iframe src='https://cheesychat.astro3000.repl.co' width='640' height='1000'></iframe><iframe src='https://cheesychat.astro3000.repl.co' width='640' height='1000'></iframe>"
+    
+  
+    
+    
+  }
+  
+}
+
+
 
 var socket;
 var usernameInput
@@ -148,7 +169,7 @@ function Connect(){
 function Send(){
   if (delay && messageInput.value.replace(/\s/g, "") != ""){
     
-    
+   
     delay = false;
     setTimeout(delayReset, 1000);
     socket.emit("send", messageInput.value);
